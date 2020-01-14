@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %} Item List {% endblock title %}
+
+{% block content %}
+
+	<div class = "container">
+
+		<div class = "row">
+
+			{% for item in items%}
+
+				<div class = "col-xl-2 col-lg-3 col-md-4 col-s-6 col-xs-12">	
+						<div class = "card">
+							<h5 class = "card-title"> {{item.name}} </h5>
+						</div>
+						</div>
+				</div>
+			
+			{% endfor %}
+
+		</div>
+	</div>
+	
+{% endblock content %}
